@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Semester Courses</title>
+    </head>
+
+    <body>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Department Code</th>
+                    <th>Class Number</th>
+                    <th>Number of Credits</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>BIOL</td>
+                    <td>405</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            
+            <tbody>
+                <tr>
+                    <td>HPEB</td>
+                    <td>553</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            
+            <tbody>
+                <tr>
+                    <td>SCHC</td>
+                    <td>499</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+            
+            <tbody>
+                <tr>
+                    <td>CSCE</td>
+                    <td>102</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            
+            <tbody>
+                <tr>
+                    <td>BIOL</td>
+                    <td>620</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            
+            <tbody>
+                <tr>
+                    <td>UNIV</td>
+                    <td>401</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+            
+            <tbody>
+                <tr>
+                    <td>WGST</td>
+                    <td>113</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+
+         <h3>Favorite Class Submission Form</h3>
+
+        <form action="/example.html" method="POST">
+
+            <div>
+                <label for="studentName">Full Name:</label>
+                <input type="text" id="studentName" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="studentEmail">University Email:</label>
+                <input type="email" id="studentEmail" required>
+            </div>
+            <br>
+
+            <div>
+                <p>Favorite Class:</p>
+                <input type="radio" id="BIOL405" name="FavoriteClass" value="value1" checked>
+                <label for="BIOL405">BIOL 405</label> 
+                <br>
+
+                <input type="radio" id="HPEB553" name="FavoriteClass" value="value2">
+                <label for="HPEB553">HPEB 553</label>
+                <br>
+
+                <input type="radio" id="SCHC499" name="FavoriteClass" value="value3">
+                <label for="SCHC499">SCHC 499</label>
+                <br>
+                
+                <input type="radio" id="CSCE102" name="FavoriteClass" value="value4">
+                <label for="CSCE102">CSCE 102</label>
+                <br>
+                
+                <input type="radio" id="BIOL620" name="FavoriteClass" value="value5">
+                <label for="BIOL620">BIOL 620</label>
+                <br>
+                
+                <input type="radio" id="UNIV401" name="FavoriteClass" value="value6">
+                <label for="UNIV401">UNIV 401</label>
+                <br>
+                
+                <input type="radio" id="WGST113" name="FavoriteClass" value="value7">
+                <label for="WGST113">WGST 113</label>
+                <br>
+
+            </div>
+
+            <button type="submit">Submit Project</button>
+
+        </form>
+    </body>
+
+</html>
