@@ -10,9 +10,9 @@ body {
 #player-card {
     background-color: darkslategray;
     border: 2px solid white;
-    border-radius: 10 px;
-    width: 300 px; 
-    padding: 20 px; 
+    border-radius: 10px;
+    width: 300px; 
+    padding: 20px; 
     margin: 0 auto; 
 }
 
@@ -23,7 +23,7 @@ button {
     background-color: gold;
     color: white;
     border: none; 
-    border-radius: 5 px; 
+    border-radius: 5px; 
     cursor: pointer; 
 }
 
