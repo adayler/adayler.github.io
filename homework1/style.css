@@ -11,7 +11,7 @@ body {
     border-radius: 15px; 
     text-align: center; 
 }
-h2 {
+.highlight {
     background-color:darksalmon; 
     color: white; 
     padding: 15px; 
