@@ -1,0 +1,13 @@
+body {
+    background-color:aliceblue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 40px;
+    color: black; 
+}
+h1 {
+    background-color:dimgray; 
+    color: white; 
+    padding: 20px; 
+    border-radius: 15px; 
+    text-align: center; 
+}
