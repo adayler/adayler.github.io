@@ -7,6 +7,7 @@ function addCash() {
     const amountText = document.getElementById("account-display");
     const statusText = document.getElementById("status-message");
     const addButton = document.getElementById("add");
+        const subtractButton = document.getElementById("subtract");
 
     amountText.innerText = accountBalance;
 
@@ -16,6 +17,7 @@ function addCash() {
         statusText.innerText = "Cha-Ching!";
         statusText.style.color = "#ffffff";
         document.body.style.backgroundColor = "#228B22";
+        subtractButton.disabled = false;
     }
 
 }
