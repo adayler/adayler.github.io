@@ -6,6 +6,7 @@ function addCash() {
 
     const amountText = document.getElementById("account-display");
     const statusText = document.getElementById("status-message");
+    const addButton = document.getElementById("add");
 
     amountText.innerText = accountBalance;
 
@@ -23,7 +24,7 @@ function addCash() {
 
         document.body.style.backgroundColor = "#5a1a1a";
 
-        document.querySelector("button").disabled = true;
+        addButton.disabled = true;
         document.querySelector("button").innerText = "Donate money!";
     }
 }
@@ -33,6 +34,7 @@ function subtractCash() {
 
     const amountText = document.getElementById("account-display");
     const statusText = document.getElementById("status-message");
+    const subtractButton = document.getElementById("subtract")
 
     amountText.innerText = accountBalance;
 
@@ -50,7 +52,7 @@ function subtractCash() {
 
         document.body.style.backgroundColor = "#5a1a1a";
 
-        document.querySelector("button").disabled = true;
+        subtractButton.disabled = true;
         document.querySelector("button").innerText = "Get a job!";
     }
 }
