@@ -1,29 +1,29 @@
-let playerHealth = 100;
-const damageAmount = 30;
+let accountBalance = 100;
+const incomeAmount = 50;
 
-function takeDamage() {
-    playerHealth = playerHealth - damageAmount;
+function addCash() {
+    accountBalance = accountBalance + incomeAmount;
 
-    const healthText = document.getElementById("health-display");
+    const amountText = document.getElementById("account-display");
     const statusText = document.getElementById("status-message");
 
-    healthText.innerText = playerHealth;
+    amountText.innerText = accountBalance;
 
-    if(playerHealth > 0)
+    if(accountBalance > 100)
     {
-        healthText.innerText = playerHealth;
-        statusText.innerText = "You've been hit!"
+        amountText.innerText = accountBalance;
+        statusText.innerText = "Cha-Ching!"
     }
     else
     {
-        healthText.innerText = 0;
-        statusText.innerText = "Game Over!";
+        amountText.innerText = 300;
+        statusText.innerText = "You're getting greedy!";
         statusText.style.color = "#f9331d";
         statusText.style.fontweight = "bold";
 
         document.body.style.backgroundColor = "#5a1a1a";
 
         document.querySelector("button").disabled = true;
-        document.querySelector("button").innerText = "Dead";
+        document.querySelector("button").innerText = "Donate money";
     }
 }
