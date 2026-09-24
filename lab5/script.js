@@ -15,18 +15,7 @@ function addCash() {
         amountText.innerText = accountBalance;
         statusText.innerText = "Cha-Ching!"
     }
-    else
-    {
-        amountText.innerText > 800;
-        statusText.innerText = "You're getting greedy!";
-        statusText.style.color = "#f9331d";
-        statusText.style.fontweight = "bold";
-
-        document.body.style.backgroundColor = "#5a1a1a";
-
-        addButton.disabled = true;
-        document.querySelector("button").innerText = "Donate money!";
-    }
+    
 }
 
 function subtractCash() {
