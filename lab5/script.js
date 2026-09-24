@@ -16,6 +16,12 @@ function addCash() {
         statusText.innerText = "Cha-Ching!"
     }
 
+    if(accountBalance > 0)
+    {
+        amountText.innerText = accountBalance;
+        document.body.style.backgroundColor = "#228B22"
+    }
+
 }
 
 function subtractCash() {
