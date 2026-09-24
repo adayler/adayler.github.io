@@ -15,7 +15,7 @@ function addCash() {
         amountText.innerText = accountBalance;
         statusText.innerText = "Cha-Ching!"
     }
-    
+
 }
 
 function subtractCash() {
@@ -42,6 +42,6 @@ function subtractCash() {
         document.body.style.backgroundColor = "#5a1a1a";
 
         subtractButton.disabled = true;
-        document.querySelector("button").innerText = "Get a job!";
+        document.getElementById("subtract").innerText = "Get a job!";
     }
 }
