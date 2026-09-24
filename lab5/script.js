@@ -18,6 +18,7 @@ function addCash() {
         statusText.style.color = "#ffffff";
         document.body.style.backgroundColor = "#228B22";
         subtractButton.disabled = false;
+        document.getElementById("subtract").innerText = "Subtract $50";
     }
 
 }
