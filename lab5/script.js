@@ -14,7 +14,7 @@ function addCash() {
     {
         amountText.innerText = accountBalance;
         statusText.innerText = "Cha-Ching!";
-        statusText.style.color = "#ffffff"
+        statusText.style.color = "#ffffff";
         document.body.style.backgroundColor = "#228B22";
     }
 
@@ -33,6 +33,7 @@ function subtractCash() {
     {
         amountText.innerText = accountBalance;
         statusText.innerText = "Oh no!";
+        statusText.style.color = "#ffffff";
     }
     else
     {
