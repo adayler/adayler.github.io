@@ -10,15 +10,10 @@ function addCash() {
 
     amountText.innerText = accountBalance;
 
-    if(accountBalance > 500)
-    {
-        amountText.innerText = accountBalance;
-        statusText.innerText = "Cha-Ching!"
-    }
-
     if(accountBalance > 0)
     {
         amountText.innerText = accountBalance;
+        statusText.innerText = "Cha-Ching!"
         document.body.style.backgroundColor = "#228B22"
     }
 
