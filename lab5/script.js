@@ -1,4 +1,4 @@
-let accountBalance = 100;
+let accountBalance = 500;
 const addsubAmount = 50;
 
 function addCash() {
@@ -9,14 +9,14 @@ function addCash() {
 
     amountText.innerText = accountBalance;
 
-    if(accountBalance > 100)
+    if(accountBalance > 500)
     {
         amountText.innerText = accountBalance;
         statusText.innerText = "Cha-Ching!"
     }
     else
     {
-        amountText.innerText = 300;
+        amountText.innerText > 800;
         statusText.innerText = "You're getting greedy!";
         statusText.style.color = "#f9331d";
         statusText.style.fontweight = "bold";
