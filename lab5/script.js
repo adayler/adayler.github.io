@@ -13,8 +13,8 @@ function addCash() {
     if(accountBalance > 0)
     {
         amountText.innerText = accountBalance;
-        statusText.innerText = "Cha-Ching!"
-        document.body.style.backgroundColor = "#228B22"
+        statusText.innerText = "Cha-Ching!";
+        document.body.style.backgroundColor = "#228B22";
     }
 
 }
@@ -24,14 +24,14 @@ function subtractCash() {
 
     const amountText = document.getElementById("account-display");
     const statusText = document.getElementById("status-message");
-    const subtractButton = document.getElementById("subtract")
+    const subtractButton = document.getElementById("subtract");
 
     amountText.innerText = accountBalance;
 
     if(accountBalance > 0)
     {
         amountText.innerText = accountBalance;
-        statusText.innerText = "Oh no!"
+        statusText.innerText = "Oh no!";
     }
     else
     {
