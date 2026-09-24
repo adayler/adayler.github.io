@@ -44,13 +44,13 @@ function subtractCash() {
     else
     {
         amountText.innerText = 0;
-        statusText.innerText = "Oh no!";
+        statusText.innerText = "You're poor!";
         statusText.style.color = "#f9331d";
         statusText.style.fontweight = "bold";
 
         document.body.style.backgroundColor = "#5a1a1a";
 
         document.querySelector("button").disabled = true;
-        document.querySelector("button").innerText = "Dead";
+        document.querySelector("button").innerText = "Get a job!";
     }
 }
