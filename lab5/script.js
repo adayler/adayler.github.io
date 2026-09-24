@@ -36,6 +36,8 @@ function subtractCash() {
         amountText.innerText = accountBalance;
         statusText.innerText = "Oh no!";
         statusText.style.color = "#ffffff";
+        subtractButton.disabled = false;
+        document.getElementById("subtract").innerText = "Subtract $50";
     }
     else
     {
