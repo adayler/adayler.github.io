@@ -51,6 +51,6 @@ function subtractCash() {
         document.body.style.backgroundColor = "#5a1a1a";
 
         document.querySelector("button").disabled = true;
-        document.querySelector("button").innerText = "You're poor";
+        document.querySelector("button").innerText = "Dead";
     }
 }
