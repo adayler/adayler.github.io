@@ -1,8 +1,8 @@
 let accountBalance = 100;
-const incomeAmount = 50;
+const addsubAmount = 50;
 
 function addCash() {
-    accountBalance = accountBalance + incomeAmount;
+    accountBalance = accountBalance + addsubAmount;
 
     const amountText = document.getElementById("account-display");
     const statusText = document.getElementById("status-message");
@@ -24,6 +24,33 @@ function addCash() {
         document.body.style.backgroundColor = "#5a1a1a";
 
         document.querySelector("button").disabled = true;
-        document.querySelector("button").innerText = "Donate money";
+        document.querySelector("button").innerText = "Donate money!";
+    }
+}
+
+function subtractCash() {
+    accountBalance = accountBalance - addsubAmount;
+
+    const amountText = document.getElementById("account-display");
+    const statusText = document.getElementById("status-message");
+
+    amountText.innerText = accountBalance;
+
+    if(accountBalance > 0)
+    {
+        amountText.innerText = accountBalance;
+        statusText.innerText = "Oh no!"
+    }
+    else
+    {
+        amountText.innerText = 0;
+        statusText.innerText = "Oh no!";
+        statusText.style.color = "#f9331d";
+        statusText.style.fontweight = "bold";
+
+        document.body.style.backgroundColor = "#5a1a1a";
+
+        document.querySelector("button").disabled = true;
+        document.querySelector("button").innerText = "You're poor";
     }
 }
