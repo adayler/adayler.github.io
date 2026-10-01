@@ -14,5 +14,16 @@ function loadInventory() {
 
     listElement.innerHTML = "";
 
-    
+    for(let i = 0; i < content.length; i++) //i is temporary variable; does this in CCW circle until i = 5 and then it will stop because 5 isn't < 5
+    {
+        let currentItem = contents[i];
+        
+        let hmtlToInject = "<li>" + currentItem + "</li>";
+
+        // listElement = listElement + htmlToInject abbreviated; 
+        listElement += hmtlToInject; 
+    }
+
+    document.querySelector("button").disabled = true; 
+    document.querySelector("button").innerText = "Backpack Full";
 }
