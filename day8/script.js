@@ -14,7 +14,7 @@ function loadInventory() {
 
     listElement.innerHTML = "";
 
-    for(let i = 0; i < content.length; i++) //i is temporary variable; does this in CCW circle until i = 5 and then it will stop because 5 isn't < 5
+    for(let i = 0; i < contents.length; i++) //i is temporary variable; does this in CCW circle until i = 5 and then it will stop because 5 isn't < 5
     {
         let currentItem = contents[i];
         
