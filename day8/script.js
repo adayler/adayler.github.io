@@ -20,8 +20,8 @@ function loadInventory() {
         
         let hmtlToInject = "<li>" + currentItem + "</li>";
 
-        // listElement = listElement + htmlToInject abbreviated; 
-        listElement += hmtlToInject; 
+        // listElement.innerHTML = listElement,innerHTML + htmlToInject abbreviated; 
+        listElement.innerHTML += hmtlToInject; 
     }
 
     document.querySelector("button").disabled = true; 
