@@ -1,0 +1,90 @@
+body {
+    background-color: #121212; /* Dark background to make garnet pop */
+    color: #F8F9FA;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #73000A; /* University of South Carolina Garnet */
+    background-color: #000000;
+    padding: 15px 25px;
+    border: 3px solid #73000A;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(115, 0, 10, 0.4);
+}
+
+header p {
+    color: #CCCCCC;
+    font-size: 1.1rem;
+}
+
+/* Main Container */
+main {
+    width: 100%;
+    max-width: 600px;
+}
+
+section h2 {
+    text-align: center;
+    color: #F8F9FA;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #73000A;
+    padding-bottom: 10px;
+}
+
+/* List Styling to separate items and add boxes */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Separates all of the items */
+}
+
+/* Individual Item Box Styling */
+li {
+    background-color: #1E1E1E; /* Dark charcoal box background */
+    border: 2px solid #73000A; /* Garnet border */
+    border-radius: 6px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Centers contents within the boxes */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+li:hover {
+    background-color: #2A2A2A;
+    transform: translateY(-2px);
+}
+
+li strong {
+    color: #73000A; /* Garnet highlight for item titles */
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #888888;
+    font-size: 0.9rem;
+}
