@@ -48,6 +48,46 @@ section h2 {
     padding-bottom: 10px;
 }
 
+/* Form Styling */
+#item-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+#item-input {
+    flex: 1;
+    padding: 12px 15px;
+    background-color: #1E1E1E;
+    border: 2px solid #73000A;
+    border-radius: 6px;
+    color: #F8F9FA;
+    font-size: 1rem;
+}
+
+#item-input:focus {
+    outline: none;
+    border-color: #A6192E;
+    box-shadow: 0 0 5px rgba(115, 0, 10, 0.6);
+}
+
+button[type="submit"] {
+    background-color: #73000A;
+    color: #F8F9FA;
+    border: none;
+    border-radius: 6px;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #A6192E;
+}
+
 /* List Styling to separate items and add boxes */
 ul {
     list-style-type: none;

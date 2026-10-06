@@ -15,23 +15,22 @@
     <main>
         <section>
             <h2>The Gamecock Gameday Checklist</h2>
-            <ul>
-                <li><strong>Garnet and Black Apparel:</strong> Jersey, t-shirt, or polo in school colors.</li>
-                <li><strong>Gamecock Spirit Gear:</strong> Shaker (pom-pom) for waving during the Fight Song.</li>
-                <li><strong>Tailgate Supplies:</strong> Tent, folding chairs, cooler, and food for Cockaboose Railroad tailgating.</li>
-                <li><strong>The "2001: A Space Odyssey" Track:</strong> Be ready to cheer when the lights flash and the team runs out to the iconic intro.</li>
-                <li><strong>Sandstorm Towel:</strong> Essential for twirling during the legendary crowd hype song.</li>
-                <li><strong>Clear Bag:</strong> Complying with Williams-Brice Stadium bag policies.</li>
-                <li><strong>Mobile Ticket:</strong> Loaded on your smartphone for stadium entry.</li>
-                <li><strong>Sunscreen & Sunglasses:</strong> For those hot early-season afternoon kickoffs.</li>
-                <li><strong>Rain Poncho:</strong> Just in case an afternoon shower hits Columbia.</li>
-                <li><strong>The Fight Song Knowledge:</strong> Ready to sing "Go Gamecocks Go!" after every score.</li>
-            </ul>
+            
+            <!-- Form to add new items -->
+            <form id="item-form">
+                <input type="text" id="item-input" placeholder="Add custom gameday item..." required>
+                <button type="submit">Add Item</button>
+            </form>
+
+            <!-- Populated dynamically via JS -->
+            <ul id="checklist"></ul>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 University of South Carolina Gameday Fan Page. Forever to Thee!</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
