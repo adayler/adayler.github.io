@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of South Carolina Gamecocks Gameday Checklist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gamecockGarnet: '#73000a',
+                        gamecockDarkGarnet: '#520007',
+                        gamecockLightGarnet: '#99000d',
+                        gamecockGold: '#d4af37',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-100 text-stone-800 h-full font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-gamecockGarnet text-white shadow-xl sticky top-0 z-50 border-b-4 border-gamecockGold">
+        <div class="max-w-5xl mx-auto px-4 py-5 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="bg-white text-gamecockGarnet p-3 rounded-2xl shadow-lg flex items-center justify-center font-black text-2xl tracking-tighter w-12 h-12">
+                    SC
+                </div>
+                <div>
+                    <h1 class="text-2xl sm:text-3xl font-black tracking-tight uppercase">Williams-Brice Gameday</h1>
+                    <p class="text-xs text-stone-200 font-medium tracking-wider uppercase">University of South Carolina Traditions Checklist</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4 bg-black/30 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10">
+                <div class="text-center">
+                    <span id="checked-count" class="text-2xl font-black text-gamecockGold">0</span>
+                    <span class="text-xs text-stone-300 block uppercase tracking-wider">Checked</span>
+                </div>
+                <div class="h-8 w-px bg-white/20"></div>
+                <div class="text-center">
+                    <span id="total-count" class="text-2xl font-black text-white">0</span>
+                    <span class="text-xs text-stone-300 block uppercase tracking-wider">Total</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-5xl w-full mx-auto px-4 py-8">
+        
+        <!-- Hero / Intro Banner -->
+        <div class="bg-gradient-to-r from-gamecockGarnet via-gamecockLightGarnet to-stone-900 text-white rounded-3xl p-6 sm:p-10 mb-8 shadow-2xl relative overflow-hidden border border-gamecockGold/30">
+            <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl font-black pointer-events-none select-none">
+                <i class="fa-solid fa-feather-pointed"></i>
+            </div>
+            <div class="relative z-10 max-w-2xl">
+                <span class="bg-gamecockGold text-stone-900 text-xs font-black uppercase px-3 py-1 rounded-full inline-block mb-3 tracking-widest shadow-sm">
+                    Forever To Thee
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-3">Welcome to Gamecock Country!</h2>
+                <p class="text-stone-200 text-sm sm:text-base leading-relaxed mb-6 font-light">
+                    Whether you are tailgating on the Fairgrounds, watching Cocky hype up the crowd, or screaming "Sandstorm" with 80,000 screaming fans—here is your ultimate checklist for a Saturday in Columbia, South Carolina!
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <button onclick="checkAll()" class="bg-gamecockGold hover:bg-amber-400 text-stone-950 font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm uppercase tracking-wider transition duration-200 shadow-md flex items-center gap-2">
+                        <i class="fa-solid fa-check-double"></i> Check All
+                    </button>
+                    <button onclick="resetAll()" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm uppercase tracking-wider transition duration-200 backdrop-blur-sm flex items-center gap-2">
+                        <i class="fa-solid fa-rotate-right"></i> Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-6 scrollbar-none">
+            <button onclick="filterItems('all')" id="filter-all" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gamecockGarnet text-white shadow-md transition duration-200 whitespace-nowrap">
+                All Traditions
+            </button>
+            <button onclick="filterItems('tailgate')" id="filter-tailgate" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-stone-700 hover:bg-stone-200 shadow-sm transition duration-200 whitespace-nowrap">
+                Tailgating & Food
+            </button>
+            <button onclick="filterItems('pregame')" id="filter-pregame" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-stone-700 hover:bg-stone-200 shadow-sm transition duration-200 whitespace-nowrap">
+                Pregame Rituals
+            </button>
+            <button onclick="filterItems('stadium')" id="filter-stadium" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-stone-700 hover:bg-stone-200 shadow-sm transition duration-200 whitespace-nowrap">
+                Inside Williams-Brice
+            </button>
+        </div>
+
+        <!-- Checklist Grid -->
+        <div id="checklist-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Items populated dynamically or statically via HTML -->
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 text-xs py-6 border-t border-stone-800 mt-12">
+        <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <p>&copy; University of South Carolina Gameday Guide. Go Gamecocks!</p>
+            <div class="flex items-center space-x-4 text-stone-300">
+                <span class="hover:text-gamecockGold transition"><i class="fa-solid fa-football"></i> SEC Football</span>
+                <span>•</span>
+                <span class="hover:text-gamecockGold transition"><i class="fa-solid fa-location-dot"></i> Columbia, SC</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
