@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dip Den - All About Dips</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar (25% width on desktop) -->
+        <aside class="sidebar">
+            <h2>Recipes</h2>
+            <div class="button-group">
+                <button onclick="showHome()">About Dips</button>
+                <button onclick="showRecipe('guacamole')">Classic Guacamole</button>
+                <button onclick="showRecipe('spinachArtichoke')">Spinach Artichoke Dip</button>
+                <button onclick="showRecipe('buffaloChicken')">Buffalo Chicken Dip</button>
+            </div>
+        </aside>
+
+        <!-- Main Body (75% width on desktop) -->
+        <main class="main-body" id="mainBody">
+            <h1 id="mainHeader">Welcome to The Dip Den!</h1>
+            <div id="mainContent">
+                <p>Welcome, fellow dip enthusiast! For as long as I can remember, my life has revolved around the magic of dipping. Whether it's game day, a family movie night, or a casual backyard barbecue, a good dip is the undisputed centerpiece of any gathering.</p>
+                <p>Why are dips so important to share with the world? Because dips bring people together. There is something inherently communal and joyous about standing around a bowl of freshly made dip with friends and family, sharing stories, chips, and laughter. Through this website, I want to spread the joy of homemade dips and prove that with just a few fresh ingredients, you can elevate any snack into an unforgettable experience.</p>
+                <p>Take a look at the sidebar on the left, click on one of the recipe buttons, and let's get dipping!</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
