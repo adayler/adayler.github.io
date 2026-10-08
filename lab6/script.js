@@ -55,7 +55,7 @@ const recipes = {
     whippedFeta: {
         title: "Whipped Feta with Honey & Pistachios",
         content: `
-            <p>A sophisticated Mediterranean-inspired masterpiece. Salty, tangy feta cheese is whipped with Greek yogurt and lemon until cloud-like, then drizzled with hot honey and topped with crunchy pistachios.</p>
+            <p>A sophisticated Mediterranean-inspired masterpiece inspired by my Greek lover, Konstantinos. Salty, tangy feta cheese is whipped with Greek yogurt and lemon until cloud-like, then drizzled with hot honey and topped with crunchy pistachios.</p>
             
             <h2>Ingredients:</h2>
             <ul>
