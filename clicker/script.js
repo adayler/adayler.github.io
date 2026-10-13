@@ -26,9 +26,9 @@ function buyKeyboard()
 
 function buyIntern()
 {
-    if(linesofCode >= internCost)
+    if(linesOfCode >= internCost)
     { 
-        linesofCode = linesOfCode - internCost; 
+        linesOfCode = linesOfCode - internCost; 
         interns = interns + 1; 
         internCost = internCost * 1.5; 
         updateScreen();
