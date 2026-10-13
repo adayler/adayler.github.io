@@ -19,7 +19,7 @@ function buyKeyboard()
     {
         linesOfCode = linesOfCode - upgradeCost; 
         clickPower = clickPower + 1; 
-        upgradeCost = upgradeCost x 1.5; 
+        upgradeCost = upgradeCost * 1.5; 
         updateScreen();
     }
 }
@@ -45,3 +45,13 @@ function updateScreen()
     document.getElementById("intern-display").innerText = interns; 
     document.getElementById("intern-display-cost").innerText = internCost; 
 }
+
+setInterval(function() {
+    if(interns > 0)
+    {
+        linesofCode = linesofCode + interns; 
+        updateScreen();
+    }
+},
+1000  
+);
