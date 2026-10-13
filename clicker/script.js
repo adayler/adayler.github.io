@@ -24,10 +24,24 @@ function buyKeyboard()
     }
 }
 
+function buyIntern()
+{
+    if(linesofCode >= internCost)
+    { 
+        linesofCode = linesOfCode - internCost; 
+        interns = interns + 1; 
+        internCost = internCost * 1.5; 
+        updateScreen();
+    }
+}
+
 function updateScreen()
 {
     document.getElementById("score-display").innerText = linesOfCode + " line(s) of code"; 
 
     document.getElementById("power-display").innerText = clickPower; 
-    document.getElementById("const-display").innerText = upgradeCost; 
+    document.getElementById("cost-display").innerText = upgradeCost; 
+
+    document.getElementById("intern-display").innerText = interns; 
+    document.getElementById("intern-display-cost").innerText = internCost; 
 }
