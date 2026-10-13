@@ -49,7 +49,7 @@ function updateScreen()
 setInterval(function() {
     if(interns > 0)
     {
-        linesofCode = linesofCode + interns; 
+        linesOfCode = linesOfCode + interns; 
         updateScreen();
     }
 },
