@@ -27,4 +27,7 @@ function buyKeyboard()
 function updateScreen()
 {
     document.getElementById("score-display").innerText = linesOfCode + " line(s) of code"; 
+
+    document.getElementById("power-display").innerText = clickPower; 
+    document.getElementById("const-display").innerText = upgradeCost; 
 }
