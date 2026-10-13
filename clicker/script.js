@@ -55,3 +55,4 @@ setInterval(function() {
 },
 1000  
 );
+//HOMEWORK: add another button function, modify the last style css for the remaining components 
