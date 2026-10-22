@@ -38,12 +38,16 @@ function buyIntern()
 
 function fireIntern()
 {
-    if(linesOfCode >= internRelief && interns >= 1)
+    if(linesOfCode >= internRelief && interns !== 0)
     { 
         linesOfCode = linesOfCode - internRelief; 
         interns = interns - 1; 
         internCost = internCost * 0.75; 
         updateScreen();
+    }
+    else
+    {
+        interns = interns;
     }
 }
 
