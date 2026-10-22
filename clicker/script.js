@@ -38,7 +38,7 @@ function buyIntern()
 
 function fireIntern()
 {
-    if(linesOfCode >= internRelief)
+    if(linesOfCode >= internRelief && interns >= 1)
     { 
         linesOfCode = linesOfCode - internRelief; 
         interns = interns - 1; 
