@@ -6,7 +6,7 @@ let upgradeCost = 50;
 
 let interns = 0;
 let internCost = 100; 
-let internRelief = 90;
+let internRelief = 40;
 
 function writeCode()
 {
@@ -38,9 +38,9 @@ function buyIntern()
 
 function fireIntern()
 {
-    if(linesOfCode >= internCost)
+    if(linesOfCode >= internRelief)
     { 
-        linesOfCode = linesOfCode + internRelief; 
+        linesOfCode = linesOfCode - internRelief; 
         interns = interns - 1; 
         internCost = internCost * 0.75; 
         updateScreen();
