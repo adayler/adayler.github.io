@@ -73,6 +73,7 @@ function updateScreen()
     document.getElementById("intern-display").innerText = interns; 
     document.getElementById("cost-intern-display").innerText = internCost; 
     document.getElementById("cost-fire-display").innerText = internRelief;
+    document.getElementById("cost-ralph-display").innerText = ralphSmash; 
 }
 
 setInterval(function() {
