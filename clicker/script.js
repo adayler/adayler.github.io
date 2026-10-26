@@ -7,6 +7,7 @@ let upgradeCost = 50;
 let interns = 0;
 let internCost = 100; 
 let internRelief = 40;
+let ralphSmash = 60; 
 
 function writeCode()
 {
@@ -32,6 +33,17 @@ function buyIntern()
         linesOfCode = linesOfCode - internCost; 
         interns = interns + 1; 
         internCost = internCost * 1.5; 
+        updateScreen();
+    }
+}
+
+function smashKeyboard()
+{
+    if(linesOfCode >= ralphSmash && clickPower >= 0)
+    {
+        linesOfCode = linesOfCode - ralphSmash; 
+        clickPower = clickPower - 1; 
+        ralphSmash = ralphSmash * 1.25;
         updateScreen();
     }
 }
