@@ -11,6 +11,9 @@ function startGame()
 {
     score = 0; 
     timeLeft = 10; 
-    timeDisplay.innerText = timeLeft; 
     scoreDisplay.innerText = score; 
+    timeDisplay.innerText = timeLeft;
+
+    startButton.disabled = true;
+    targetElement.style.display = "block";
 }
