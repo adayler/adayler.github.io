@@ -39,7 +39,7 @@ function buyIntern()
 
 function smashKeyboard()
 {
-    if(linesOfCode >= ralphSmash && clickPower >= 0)
+    if(linesOfCode >= ralphSmash && clickPower > 1)
     {
         linesOfCode = linesOfCode - ralphSmash; 
         clickPower = clickPower - 1; 
