@@ -1,5 +1,5 @@
 function triggerBug1() {
-    let outputText = document.getElementByID("output1"); 
+    let outputText = document.getElementById("output1"); // lowercased the "D"
     outputText.innerText = "Code Fixed!";
     
     let btn = document.getElementById("btn1");
@@ -11,13 +11,13 @@ function triggerBug2() {
     let outputText = document.getElementById("output2");
     outputText.innerText = "Code Fixed!";
     
-    let btn = document.getElementById("button-two"); 
+    let btn = document.getElementById("btn2"); // fixed Id to be "btn2"
     btn.innerText = "Done";
     btn.disabled = true;
 }
 
 function triggerBug3() {
-    let outputText = document.getElementById(output3); 
+    let outputText = document.getElementById("output3"); // added quotes to p Id
     outputText.innerText = "Code Fixed!";
     
     let btn = document.getElementById("btn3");
